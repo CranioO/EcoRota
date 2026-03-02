@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRota - Inovação e Sustentabilidade</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoRota 🌿</h1>
+        <p>Encontre pontos de coleta seletiva perto de você.</p>
+    </header>
+
+    <div class="filtros"> 
+        <button onclick="filtrar('todos', event)">todos</button>
+        <button onclick="filtrar('plastico', event)">plastico</button>
+        <button onclick="filtrar('eletronicos', event)">Eletrônicos</button>
+        <button onclick="filtrar('metal', event)">Metal/Ferro</button>
+    </div>
+
+    <div id="map"></div> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
